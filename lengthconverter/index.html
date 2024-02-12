@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Length Converter</title>
+</head>
+<body>
+    <div id="wrapper">
+        <h2>cm to inches</h2>
+        <div class="inputdiv">
+            <input type="text" id="input" placeholder="length in cm">
+            <!-- input textbox varanum  -->
+        </div>
+        <div>
+            <button type="submit" onclick="convert()">Convert to inches</button>
+            <!-- submit button create pannaachu -->
+            <!-- button ah click pannum pothu convert() endra function kku ulla irukkirathu work aakanum -->
+        </div>
+        <div id="result"></div>
+        <!-- ithu webpage la java scrift aala add pannirathukku vachirukkam -->
+    </div>
+    <script>
+        function convert(){
+        const cmVal=Number(document.getElementById("input").value)
+        // string ah Number ku maathanum
+        const inchVal=cmVal/2.54
+        // inchvalue kku calculation
+        const result=document.getElementById("result")
+        result.innerHTML=inchVal.toFixed(2)+" inches"
+        // inchVal.toFixed(2):-inchVal ooda 2 decimal plece venum endrathukku
+        }
+        
+    </script>
+</body>
+</html>
+<!-- prompt -->
