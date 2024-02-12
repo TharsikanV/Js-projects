@@ -316,3 +316,4 @@ obj2.name='kumya'
 
 console.log('obj1',obj1)
 console.log('obj2',obj2)
+////////////////////////////////
